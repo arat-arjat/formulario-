@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/1265cb7189.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>payment</title>
+</head>
+<body> 
+  <div class="container mt-2 border border">
+        <!---head payment-->
+     <nav class="navbar bg-body-tertiary mt-4">
+       <div class="container-fluid">
+           <span class="navbar-brand mb-2 h1">
+            Formulario de Pago </span>
+        </div>
+      </nav>
+
+          <nav class="navbar bg-danger-subtle m-3" style: >
+            <div class="container-fluid">
+              <span class="navbar-brand p-1" class=" h6 ">
+               Ingrese informacion 
+              </span>
+            </div>
+          </nav>
+        
+        <!--datos tdc-->
+
+        <form class="was-validated">  
+
+            <div class="d-flex">
+
+              <div class=" col-4 mx-4">
+                  <label for="numerotarjeta"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front mr-2" viewBox="0 0 16 16">
+                      <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                      <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                    </svg> 
+                  Numero de tarjeta
+                  </label>
+                  <input type="text" id="numerotarjeta" class="form-control mb-2 border border-dark" placeholder="XXXX XXXX XXXX XXXX" name="numerotarjeta" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Completa los numeros de la tarjeta</div>
+                
+                </div>
+
+                <div class=" col-3 mx-3">
+                  
+                    <label for="numerocvc">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card " viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                       <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                     </svg>
+                     CVV
+                    </label>
+                    <input type="password" id="numerocvc" class="form-control mb-2 border border-dark" placeholder="XXX" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Ingrese codigo de seguridad </div>
+                </div>
+              
+
+                <div class="col-3 mx-2">
+                    <label for="amount" class="mr-2 tex-center"> 
+                      Amount   
+                     </label>    
+                    <input type="text" id="amount" class="form-control border border-dark "  placeholder="$$$" required>
+                    <div class="valid-feedback">Valid.</div> 
+                    <div class="invalid-feedback">Monto a pagar </div>    
+                  </div>
+
+            </div>
+        <!--fin tdc-->
+      <!--inicio cuerpo formalario -->
+      <div class="d-flex">
+        <!--cuerpo lado derecho-->
+        <div class="col-6">
+         <div class=" mx-1">
+          <label for="nombre">
+            
+          </label>
+          <input type="text" id="nombre" class="form-control" placeholder="Nombres" required>
+          <div class="valid-feedback">Valid.</div> 
+          <div class="invalid-feedback">Campo requerido</div>  
+          </div>
+
+         <div class=" mx-1">
+          <label for="ciudad" class="form-label">
+            
+          </label>
+          <input type="text" id="ciudad" class="form-control" placeholder="Ciudad" required>
+          <div class="valid-feedback">Valid.</div> 
+          <div class="invalid-feedback">Campo requerido</div>
+          </div>
+          
+         <div class=" mt-2 mx-1">
+            <label for="aceptamos" class="form-label">
+              Sistemas de pago 
+           </label>
+
+          <div class="d-flex">
+          <div> <i class="fa-brands fa-cc-visa"></i>
+          <input class="form-check-input" type="radio" name="visa" id="aceptamos" value="visa" aria-label=""> 
+          </div>
+          <div > <i class="fa-brands fa-cc-mastercard"></i>
+            <input class="form-check-input" type="radio" name="mastercard" id="aceptamos" value="mastercard" aria-label="..."> 
+          </div>
+          <div> <i class="fa-brands fa-cc-diners-club"></i>
+            <input class="form-check-input" type="radio" name="diners club" id="aceptamos" value="diners club" aria-label="..."> 
+          </div>
+          <div><i class="fa-brands fa-cc-amex"></i>
+            <input class="form-check-input" type="radio" name="american express" id="aceptamos" value="american express" aria-label="..."> 
+          </div>
+        </div>
+        </div>
+        </div>
+              <!--lado izquiero cuerpo-->
+      <div class="col-6">
+
+          <div class=" mx-1 ">
+            <label for="apellido" class="form-label">
+            </label>
+            <input type="text" id="apellido" class="form-control" placeholder="Apellidos" required>
+            <div class="valid-feedback">Valid.</div> 
+            <div class="invalid-feedback">Campo requerido</div>
+            </div>
+
+          
+
+              <div class="d-flex my-4 mx-1" >
+                
+               
+                <label for="estados" class="form-label"></label>
+                <select class="form-select mx-2" id="estados" required>
+                <option selected disabled value="">selecciona un estado</option>
+                <option>Distrito metropolitano</option>
+                <option> Anzoategui </option>
+                <div class="valid-feedback"></div> 
+                <div class="invalid-feedback"></div>  
+             
+
+               
+                <label for="postal" class="form-label"></label>
+                <input type="text" id="postal" class="form-control" placeholder="Cod. Postal" required>
+                <div class="d-flex valid-feedback"></div> 
+                <div class="d-flex invalid-feedback"></div>
+                
+      
+              </div>
+          <div class=" mx-1">
+            <p>Mensaje </p>
+            <label for="contacto"> </label>
+            <textarea name="Deja tu Mensaje" id="contacto" class="col-11" rows="3" placeholder=" Escribenos"></textarea>
+          </div>   
+          </div>
+      </div>
+      </form>
+<!--fin formulario-->
+<!--pie del formulario-->
+      <div class=" d-flex bg-dark-subtle my-2 justify-content-md-end"> 
+        <input class="btn btn-secondary mx-2" type="reset" value="Cancelar">
+        <input class="btn btn-primary mx-2" type="submit" value="Enviar">
+    </div>   
+    <script src="https://kit.fontawesome.com/1265cb7189.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
